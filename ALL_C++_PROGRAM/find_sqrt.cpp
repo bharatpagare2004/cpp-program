@@ -1,6 +1,6 @@
 // this program for find the square root of number.
 #include<iostream>
-#include<cmath> //add extra <cmath> fire.
+#include<cmath> //add extra <cmath> file.
 using namespace std;
 int main()
 {
