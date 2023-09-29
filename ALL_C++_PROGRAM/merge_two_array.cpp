@@ -51,7 +51,8 @@ int main()
     cin >> n1;
     cout << "\nEnter the elements of First array:\n";
     for (i = 0; i < n1; i++)
-        cin >> A[i];
+    cin >> A[i];
+    
     cout << "\nEnter the size of Second array:\n";
     cin >> n2;
     cout << "\nEnter the elements of Second array:\n";
