@@ -99,14 +99,14 @@ class  derived
 		{
 		      cout<<endl;
 		      cout<<setw(10)<<p.name;
-		      cout<<setw(10)<<p.dob;
-		      cout<<setw(4)<<p.bg;
-		      cout<<setw(7)<<p.height;
-		      cout<<setw(7)<<p.weight;
-		      cout<<setw(5)<<p.insu_pno;
+		      cout<<setw(13)<<p.dob;
+		      cout<<setw(8)<<p.bg;
+		      cout<<setw(8)<<p.height;
+		      cout<<setw(8)<<p.weight;
+		      cout<<setw(13)<<p.insu_pno;
 		      cout<<setw(10)<<p.cadd;
-		      cout<<setw(12)<<p.ph_no;
-		      cout<<setw(5)<<p.dlno;
+		      cout<<setw(13)<<p.ph_no;
+		      cout<<setw(8)<<p.dlno;
 		}
 };
 int personal::cnt;
@@ -120,13 +120,13 @@ int main()
    cout<<"\nConstructor values...\n";
     cout<<setw(10)<<"NAME";
     cout<<setw(10)<<"DATE";
-    cout<<setw(3)<<"BG";
-    cout<<setw(7)<<"Height";
-    cout<<setw(7)<<"weight";
-    cout<<setw(5)<<"IPN";
+    cout<<setw(10)<<"BG";
+    cout<<setw(10)<<"Height";
+    cout<<setw(10)<<"weight";
+    cout<<setw(10)<<"IPN";
     cout<<setw(10)<<"ADDRESS";
-    cout<<setw(12)<<"PH NO";
-    cout<<setw(5)<<"DLN";
+    cout<<setw(10)<<"PH NO";
+    cout<<setw(10)<<"DLN";
     
     personal p("Gauri","24oct93","o-",5.5,50,345,"Dawarka","9430876123",789);
     d.display(p);
@@ -145,13 +145,13 @@ int main()
     cout<<endl;
     cout<<setw(10)<<"NAME";
     cout<<setw(10)<<"DATE";
-    cout<<setw(3)<<"BG";
-    cout<<setw(7)<<"Height";
-    cout<<setw(7)<<"weight";
-    cout<<setw(5)<<"IPN";
+    cout<<setw(10)<<"BG";
+    cout<<setw(10)<<"Height";
+    cout<<setw(10)<<"weight";
+    cout<<setw(10)<<"IPN";
     cout<<setw(10)<<"ADDRESS";
-    cout<<setw(12)<<"PH NO";
-    cout<<setw(5)<<"DLN";
+    cout<<setw(10)<<"PH NO";
+    cout<<setw(10)<<"DLN";
     for(i=0;i<n;i++)
     {
 	  personal::showcount();
