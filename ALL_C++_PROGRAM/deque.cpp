@@ -145,7 +145,7 @@ int main()
 		cout<<"\n4_Deletion from front";
 		cout<<"\n5-Deletion from rear";
 		cout<<"\n6_Exit";
-		cout<<"\nEnter your choice<1-4>:";
+		cout<<"\nEnter your choice<1-6>:";
 		cin>>c;
 
 		switch(c)
@@ -182,7 +182,8 @@ int main()
 			break;
 		}
 
-	}while(c!=7);
+	}
+    while(c!=7);
 	return 0;
 
 }

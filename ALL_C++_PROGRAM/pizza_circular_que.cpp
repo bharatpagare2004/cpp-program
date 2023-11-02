@@ -79,7 +79,7 @@ bool PizzaParlour::addOrder(int id){
 	 }
  }
  void intro()
- {	char name[50]={"\n Vaibhav Cafe \n"};
+ {	char name[50]={"\n BHARAT CAFE \n"};
  		for(int i=0;name[i]!='\0';i++)
 	{
 		//Sleep(50);
