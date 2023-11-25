@@ -30,7 +30,7 @@ class sort // creating class for sorting purpose
         for(j=i+1;j<n;j++)
         {
             cmp++;
-            if(a[j]>a[i])
+            if(a[j]<a[i])
             {
                 exchange++;
                 temp = a[i];
