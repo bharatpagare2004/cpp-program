@@ -12,20 +12,20 @@ class complex
         img = 0;
     }
     complex operator +(complex);
-    complex operator *(complex);
-    friend ostream & operator<<(ostream &,complex &);
-    friend istream & operator>>(istream &,complex &);
+    //complex operator *(complex);
+    friend ostream& operator<<(ostream &,complex &);
+    friend istream& operator>>(istream &,complex &);
 
 
 
 };
-istream & operator >>(istream &is,complex &obj)
+istream& operator >>(istream &is,complex &obj)
 {
     is>>obj.real;
     is>>obj.img;
     return is;
 }
-ostream & operator <<(ostream &out,complex &obj)
+ostream& operator <<(ostream &out,complex &obj)
 {
     out<<" "<<obj.real;
     out<<"+"<<obj.img<<"i";
@@ -39,7 +39,7 @@ complex complex :: operator +(complex obj)
     temp.img = img+obj.img;
     return temp;
 }
-
+/*
 complex complex :: operator *(complex obj)
 {
     complex temp;
@@ -50,6 +50,7 @@ complex complex :: operator *(complex obj)
 
 
 }
+*/
 int main()
 {
     complex a,b ,c,d;
@@ -63,9 +64,9 @@ int main()
     cout<<"addition is "<<endl;
     cout<<c;
 
-    d =a*b;
-    cout<<"\nmultiplication is "<<endl;
-    cout<<d;
+   // d =a*b;
+    //cout<<"\nmultiplication is "<<endl;
+    //cout<<d;
 
     return 0;
 
