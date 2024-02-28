@@ -1,0 +1,61 @@
+/*Write a program in C++ to implement Stack. Design the class for stack and the operations to be performed on stack. Use Constructors and destructors. The objective of this assignment is to learn the concepts classes and objects, constructors and destructors.
+*/
+
+#include <iostream>
+#define MAX 10
+
+using namespace std;
+class stk
+{
+  int a[MAX];
+  int top;
+  public:
+    friend class stack;
+};
+class stack
+{
+   stk s;
+   public:
+   stack(int x=-1)
+   {
+      s.top=-1;
+   }
+   void push(int x)
+   {
+      (s.top)++;
+      s.a[s.top]=x;
+   }
+   int pop()
+   {
+      int x=s.a[s.top];
+      (s.top)--;
+      return(x);
+   }
+   int stack_full()
+   {
+      if(s.top==MAX-1)
+	return(1);
+      else
+	return(0);
+   }
+   int stack_empty()
+   {
+      if(s.top==-1)
+	return(1);
+      else
+	return(0);
+   }
+
+};
+int  main()
+{
+   stack s1;
+   for(int i=0;i<5;i++)
+    if(!s1.stack_full())
+      s1.push(10);
+   for(int i=0;i<5;i++)
+    if(!s1.stack_empty())
+      cout<<s1.pop()<<endl;
+
+      return 0;
+}
